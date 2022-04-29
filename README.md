@@ -32,6 +32,16 @@ Once you have downloaded the sample, the .mht files in the sample's docs directo
 
 For more information about WFP callout drivers, see [Windows Filtering Platform Callout Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2).
 
+## Updates from the one in the Windows-Driver-Samples
+The sample is originally taken from the [windows-driver-samples](https://github.com/microsoft/Windows-driver-samples/tree/master/network/trans/WFPSampler). 
+It does not build with updated VS2019 and SDK version: SDK 10.0.19041.0 and later. There is a pending [pull request](https://github.com/microsoft/Windows-driver-samples/pull/538) for addressing the issue. 
+
+This project builds with the updated SDK and has been also been tested with latest (10.0.22000.0).
+
+Other updates in the project are:
+- Steps mentioned under "Set the configuration and platform in Visual Studio"
+- Steps mentioned under "Edit the restart setting in the sample installation script"
+
 ## Open the driver solution in Visual Studio
 
 Navigate to the folder that contains the sample. Double click the solution file, WFPSampler.sln. In Visual Studio, locate Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has these projects:
